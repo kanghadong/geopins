@@ -17,7 +17,7 @@ import { WebSocketLink } from 'apollo-link-ws';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 
 const wsLink = new WebSocketLink({
-  uri: process.env.NODE_ENV === 'production' ? 'wss://geopinshdkang2007.herokuapp.com/graphql' : 'ws://localhost:4000/graphql',
+  uri: 'wss://geopinshdkang2007.herokuapp.com/graphql',
   options: {
     reconnect: true
   }
